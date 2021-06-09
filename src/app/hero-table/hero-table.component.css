@@ -1,0 +1,23 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.demo-table {
+    width: 90%;
+  }
+  
+  .mat-column-id {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-right: 24px;
+    text-align: center;
+  }
+  .mat-column-name {
+    padding-left: 24px;
+  }
+  .mat-column-edit {
+    display: flex;
+    padding: 21px 0;
+    justify-content: flex-end;
+  }

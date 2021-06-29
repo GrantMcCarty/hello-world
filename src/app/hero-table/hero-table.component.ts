@@ -43,12 +43,7 @@ export class HeroTableComponent implements OnInit {
   }
 
   editHero(hero) {
-    // if (this.showAdd) {
-    //   this.showAdd = false;
-    //   this.clear();
-    // }
     if(this.editing) return;
-    // this.original.name = hero.name;
     this.revertHidden(hero);
     this.editing = true;
   }

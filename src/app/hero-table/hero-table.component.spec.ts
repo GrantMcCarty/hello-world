@@ -22,4 +22,8 @@ describe('HeroTableComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should not be editing on init', () => {
+    expect(component.editing).toBeFalse();
+  });
 });

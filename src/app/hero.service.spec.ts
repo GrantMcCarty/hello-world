@@ -13,4 +13,8 @@ describe('HeroService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should return heroes', () =>{
+    expect(service.getHeroes()).toBeTruthy();
+  });
 });

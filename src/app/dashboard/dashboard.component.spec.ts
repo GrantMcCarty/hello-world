@@ -22,4 +22,11 @@ describe('DashboardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should return heroes', () => {
+    component.getHeroes();
+    expect(component.heroes).toBeTruthy();
+    expect(component.heroes.length).toBe(4);
+  });
+
 });

@@ -9,8 +9,8 @@ describe('HeroDetailComponent', () => {
   const fakeActivatedRoute = {
     snapshot: {
       paramMap: {
-        get(): string {
-          return "123";
+        get(): number {
+          return 2;
         }
       }
     },
@@ -33,4 +33,5 @@ describe('HeroDetailComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  
 });

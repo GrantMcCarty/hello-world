@@ -28,4 +28,10 @@ describe('HeroesComponent', () => {
     expect(component.heroes).toBeTruthy();
     expect(component.heroes.length).toBe(10);
   });
+  it('should have heroes data', () => {
+    component.getHeroes();
+    expect(component.heroes).toBeTruthy();
+    expect(component.heroes[0].name).toBe('Dr Nice');
+    expect(component.heroes[2].power).toBe(900);
+  });
 });
